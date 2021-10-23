@@ -1,20 +1,11 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: sans-serif;
 }
 body {
     background: #0a2a43;
     min-height: 1500px;
-}
-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 section::after {
     content: "";
@@ -35,6 +26,15 @@ section::before {
     z-index: 10000;
     mix-blend-mode: color;
 }
+section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 section img {
     position: absolute;
     top: 0;
@@ -46,8 +46,8 @@ section img {
 }
 #text {
     position: relative;
-    color: #fff;
     font-size: 10em;
+    color: #fff;
     z-index: 1;
 }
 #road {
